@@ -1,0 +1,86 @@
+.fullFooter {
+  background-color: #6da2eb;
+  height: 17em;
+  display: flex;
+  flex-direction: column;
+}
+
+.upperSection {
+  width: 100%;
+  height: 15em;
+  background-color: #6da2eb;
+  display: flex;
+  align-items: center;
+}
+
+.uLeftSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.uLeftSectionText {
+  margin-right: 10%;
+  color: white;
+}
+
+.midLine {
+  height: 80%;
+  width: 0.2%;
+  background-color: white;
+}
+
+.uRightSection {
+  width: 50%;
+  height: 100%;
+}
+
+.lowerSection {
+  width: 100%;
+  height: 5em;
+  background-color: #4575b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.linksSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.linkTexts {
+  width: 0%;
+  font-weight: normal;
+  margin-left: 10%;
+  margin-top: 0.2em;
+  color: white;
+  text-decoration: none;
+  width: 6em;
+  transition: color 0.3s ease-in-out;
+}
+
+.linkImages {
+  color: white;
+  margin-right: 0.5em;
+}
+
+.linkTexts:hover {
+  color: #d6e5f9;
+}
+
+@media (max-width: 500px) {
+  .uLeftSectionText {
+    margin-right: 4%;
+    margin-left: 10%;
+  }
+}

@@ -1,0 +1,124 @@
+.sideArea {
+  position: fixed;
+  height: 100%;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  background-color: #6da2ebc4;
+  transition: transform 0.5s ease;
+  transform: translateX(-100%);
+  z-index: 50;
+}
+
+.sideArea.open {
+  transform: translateX(0);
+}
+
+.newButton {
+  margin: 1em;
+  margin-left: 4em;
+  position: fixed;
+  /* top: -1%; */
+  left: 60%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 50%;
+}
+
+.newButton:hover {
+  background-color: #59a1fa;
+}
+
+.blurArea {
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #6da2eb15;
+  transition: 0.5s ease;
+  z-index: 45;
+  backdrop-filter: blur(2px);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logoSide {
+  width: 6em;
+  margin-top: 1.5em;
+  margin-bottom: -1em;
+}
+
+.textSection2 {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sideText {
+  margin-top: 1.9em;
+  color: white;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.sideText:hover {
+  color: rgb(218, 227, 248);
+}
+
+.navTextExtra {
+  display: none;
+}
+
+.line {
+  margin-top: 0.2em;
+  border: none;
+  border-top: 3.1px solid rgb(255, 255, 255);
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  .sideText {
+    font-size: medium;
+  }
+
+  .navTextExtra {
+    display: flex;
+  }
+
+  .navTextExtra2 {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .sideArea {
+    width: 30vh;
+  }
+
+  .login-form {
+    width: auto;
+  }
+
+  .newButton {
+    left: 45%;
+  }
+}

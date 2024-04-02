@@ -1,0 +1,48 @@
+.tableLengthSet {
+  height: 30em;
+  overflow: scroll;
+  width: 100%;
+}
+
+.tableArea {
+  margin: 0 10px; /* Add some margin around the table */
+  flex: 1; /* Allow tables to expand and take available space */
+  box-shadow: 1px 5px 25px rgba(0, 29, 115, 0.281);
+}
+
+.tableHeader {
+  margin-bottom: 10px;
+  padding-left: 0.5em;
+}
+
+.tableArea table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableArea th,
+.tableArea td {
+  padding: 12px;
+  border: 1px solid #ddd; /* Add borders to cells */
+}
+
+.tableArea th {
+  background-color: #062aaa; /* Blue background color */
+  font-weight: bold;
+  text-align: left;
+  color: #fff; /* Header text color */
+}
+
+.tableArea tbody tr.evenRow {
+  background-color: #ecf3fc; /* Light blue even row background color */
+}
+
+.tableArea tbody tr.oddRow {
+  background-color: #fff; /* White odd row background color */
+}
+
+@media (max-width: 800px) {
+  .tableLengthSet {
+    height: 20em;
+  }
+}

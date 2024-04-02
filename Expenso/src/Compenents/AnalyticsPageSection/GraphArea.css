@@ -1,0 +1,23 @@
+.graphContainer {
+  padding: 20px;
+  width: 70%;
+  height: 30em;
+  margin: 0 auto;
+}
+
+.graphSection {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 1px 5px 25px rgba(0, 29, 115, 0.422);
+  padding: 1em;
+}
+
+@media (max-width: 800px) {
+  .graphContainer {
+    height: 20em;
+    padding: 2px;
+    margin: 0px;
+    width: 85%;
+  }
+}

@@ -1,0 +1,65 @@
+.mainArea {
+  height: 39em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GraphArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: rotate(180deg);
+  align-items: center;
+}
+
+.textInSec4 {
+  transform: rotate(180deg);
+  margin-right: 5em;
+  color: #062aaa;
+  width: 100%;
+}
+
+.textInSec4Head {
+  font-size: 5em;
+}
+
+.myButtonLast {
+  width: 10em;
+  background-color: #dae8fa;
+  height: 2em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.myButtonLast:hover {
+  background-color: #c0d5f1;
+}
+
+@media (max-width: 800px) {
+  .textInSec4Head {
+    font-size: 3em;
+  }
+
+  .mainArea {
+    height: 25em;
+  }
+}
+
+@media (max-width: 500px) {
+  .textInSec4Head {
+    font-size: 2.2em;
+    margin-left: -1.65em;
+  }
+
+  .myButtonLast {
+    font-size: medium;
+    margin-left: -4em;
+  }
+}

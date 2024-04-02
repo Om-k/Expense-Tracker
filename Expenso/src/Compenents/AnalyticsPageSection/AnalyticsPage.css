@@ -1,0 +1,71 @@
+.MainSectionAn {
+  width: 100%;
+
+  /* background-color: rgb(113, 221, 25); */
+  padding-top: 7.5em;
+}
+
+.bodySectionAn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+
+.GraphSectionAn {
+  display: flex;
+  justify-content: center;
+  width: 60em;
+  height: 28em;
+  background-color: #f3f8fe;
+  border: 3px solid #98c3fb;
+  border-radius: 5px;
+}
+
+.tableArea {
+  margin-top: 1em;
+  border-radius: 10px;
+}
+
+.tableAreaTogether {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.tableFilter {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.filterButton {
+  margin-top: 1em;
+}
+
+.AddDataButton {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.2em;
+  border-radius: 0px;
+  font-weight: bold;
+  background-color: #062aaa;
+  color: #fff;
+  text-align: center;
+}
+
+.tableHeaderM {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .tableAreaTogether {
+    flex-direction: column;
+    width: 96%;
+  }
+}
