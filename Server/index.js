@@ -5,7 +5,7 @@ const userModel = require("./models/user");
 const expenseModel = require("./models/expense");
 const savingModel = require("./models/savings");
 require('dotenv').config(); // Load environment variables
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 console.log('MONGODB_URI:', process.env.MONGODB_URI); // Log the MongoDB URI to verify
 
