@@ -5,6 +5,7 @@ const userModel = require("./models/user");
 const expenseModel = require("./models/expense");
 const savingModel = require("./models/savings");
 require('dotenv').config(); // Load environment variables
+const port = process.env.PORT || 4000;
 
 console.log('MONGODB_URI:', process.env.MONGODB_URI); // Log the MongoDB URI to verify
 
@@ -16,7 +17,7 @@ mongoose
   .connect(process.env.MONGODB_URI) // Use environment variable
   .then(() => {
     console.log("Connected to MongoDB");
-    app.listen(3001, () => {
+    app.listen(port, () => {
       console.log("Server is running");
     });
   })
