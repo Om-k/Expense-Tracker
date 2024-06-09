@@ -16,7 +16,7 @@ export const SignUp = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/SignUp", { email, password })
+      .post(import.meta.env.VITE_REACT_APP_API_URL + "/SignUp", { email, password })
       .then((result) => {
         //console.log(result);
         //setUserEmail(email);

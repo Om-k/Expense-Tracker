@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { Logo } from "../Logo/Logo";
 import useStore from "../../../Store/userStore";
 
+
 export const LogIn = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -18,7 +19,7 @@ export const LogIn = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/LogIn", { email, password })
+      .post(import.meta.env.VITE_REACT_APP_API_URL + "/LogIn", { email, password })
       .then((result) => {
         // console.log(result);
         if (result.data === "Success") {

@@ -66,10 +66,14 @@ export const SideWindow = () => {
           </div>
         </div>
         <div className="textSection2">
-          <div className="logOut sideText navTextExtra">
+          <div onClick={() => {
+                navigate("/AboutPage");
+              }} className="logOut sideText navTextExtra">
             About<div className="line"></div>
           </div>
-          <div className="logOut sideText navTextExtra">
+          <div  onClick={() => {
+                navigate("/");
+              }}  className="logOut sideText navTextExtra">
             Homepage<div className="line"></div>
           </div>
           <div onClick={checkStart} className="logOut sideText navTextExtra">

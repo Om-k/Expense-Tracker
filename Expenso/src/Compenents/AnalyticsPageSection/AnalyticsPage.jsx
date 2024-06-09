@@ -62,7 +62,7 @@ export const AnalyticsPage = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3001/GetExpense", { userEmail })
+      .post(import.meta.env.VITE_REACT_APP_API_URL + "/GetExpense", { userEmail })
       .then((result) => {
         setUserExpenseData(result.data);
       })
@@ -108,7 +108,7 @@ export const AnalyticsPage = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3001/GetSaving", { userEmail })
+      .post(import.meta.env.VITE_REACT_APP_API_URL + "/GetSaving", { userEmail })
       .then((result) => {
         setUserSavingsData(result.data);
       })

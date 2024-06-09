@@ -22,7 +22,7 @@ export const AddData = ({ setAddDataVisible, addDataVisible, userEmail }) => {
       };
 
       axios
-        .post("http://localhost:3001/AddExpense", expenseObj)
+        .post(import.meta.env.VITE_REACT_APP_API_URL + "/AddExpense", expenseObj)
         .then((result) => {})
         .catch((err) => console.log(err));
     }
@@ -36,7 +36,7 @@ export const AddData = ({ setAddDataVisible, addDataVisible, userEmail }) => {
       };
 
       axios
-        .post("http://localhost:3001/AddSaving", expenseObj)
+        .post(import.meta.env.VITE_REACT_APP_API_URL + "/AddSaving", expenseObj)
         .then((result) => {})
         .catch((err) => console.log(err));
     }

@@ -11,6 +11,7 @@ import { EnterEmail } from "./Compenents/LogInSignData/EnterEmail";
 import AboutPage from "./Compenents/AboutPage/AboutPage";
 
 function App() {
+  //console.log(import.meta.env.VITE_REACT_APP_API_URL);
   const [count, setCount] = useState(0);
   const storedEmail = localStorage.getItem("userEmail");
   const [goToFooter, setGoToFooter] = useState(false);

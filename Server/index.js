@@ -4,15 +4,16 @@ const cors = require("cors");
 const userModel = require("./models/user");
 const expenseModel = require("./models/expense");
 const savingModel = require("./models/savings");
+require('dotenv').config(); // Load environment variables
+
+console.log('MONGODB_URI:', process.env.MONGODB_URI); // Log the MongoDB URI to verify
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 mongoose
-  .connect(
-    "mongodb+srv://omkpoojary:Om%4012345@cluster0.gcxfdxk.mongodb.net/Expenso?retryWrites=true&w=majority"
-  )
+  .connect(process.env.MONGODB_URI) // Use environment variable
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(3001, () => {
@@ -34,7 +35,7 @@ app.post("/LogIn", (req, res) => {
         res.json("Incorrect Password");
       }
     } else {
-      res.json("User does'nt exist");
+      res.json("User doesn't exist");
     }
   });
 });
